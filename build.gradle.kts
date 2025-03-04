@@ -1,5 +1,3 @@
-
-
 plugins {
     id("java")
 
@@ -23,6 +21,8 @@ dependencies {
     // define dependencies without versions
     implementation("io.projectreactor.netty:reactor-netty-core")
     implementation("io.projectreactor.netty:reactor-netty-http")
+
+    implementation("ch.qos.logback:logback-classic:1.2.11")
 
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")

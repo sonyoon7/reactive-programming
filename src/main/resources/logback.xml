@@ -1,0 +1,19 @@
+<configuration>
+
+    <!-- Console 로그 출력 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Reactor Netty Debug 로그 설정 -->
+    <logger name="reactor.netty.http.client" level="DEBUG"/>
+    <logger name="reactor.netty" level="DEBUG"/>
+
+    <!-- 전체 애플리케이션 로그 수준 설정 (필요에 따라 조정 가능) -->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
