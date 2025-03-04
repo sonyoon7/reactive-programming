@@ -5,7 +5,7 @@ import reactor.netty.DisposableServer;
 import reactor.netty.tcp.TcpServer;
 import reactor.netty.transport.logging.AdvancedByteBufFormat;
 
-public class Application {
+public class TcpServerApplication {
 
     public static void main(String[] args) {
         DisposableServer server =
