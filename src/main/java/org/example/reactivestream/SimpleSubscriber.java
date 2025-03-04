@@ -1,4 +1,4 @@
-package org.example;
+package org.example.reactivestream;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
